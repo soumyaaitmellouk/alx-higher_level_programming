@@ -13,12 +13,14 @@ class Square:
              size (int): Size of the instance.
         """
         self.__size = size
+
     @property
     def size(self):
         """to retrieve the size
         return: the size
         """
         return (self.__size)
+
     @size.setter
     def size(self, value):
         """
@@ -45,7 +47,7 @@ class Square:
         """
         that prints in stdout the square with the character #
         """
-        if( self.__size == 0):
+        if(self.__size == 0):
             print(" ")
         for i in range(self.__size):
             for j in range(self.__size):
