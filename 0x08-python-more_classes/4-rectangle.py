@@ -88,8 +88,11 @@ class Rectangle:
             else:
                 rectangle.append("\n")
         return ("".join(rectangle))
-    
-    def __repr__(self):
-        """string representation of the rectangle to be able to recreate a new instance"""
 
-        return "Rectangle(" + str(self.__width) + " , " + str(self.__height) + ")"
+    def __repr__(self):
+        """string representation of the rectangle to
+        be able to recreate a new instance"""
+        str1 = "Rectangle(" + str(self.__width)
+        str2 = " , " + str(self.__height) + ")"
+
+        return str1 + str2
