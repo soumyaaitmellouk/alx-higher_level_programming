@@ -4,7 +4,7 @@ function to return a type
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     function to return a type
     :param obj: parameter 1
