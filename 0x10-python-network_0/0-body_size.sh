@@ -7,7 +7,6 @@ if [ $# -ne 1 ]; then
 fi
 
 url=$1
-response=$(curl -s -o /tmp/response.txt -w "%{size_download}" "$url")
 
-echo "Size of the response body: $response bytes"
-rm -f /tmp/response.txt
+# Send a request to the URL and display the size of the response body in bytes
+curl -sI "$url" | grep -i 'Content-Length' | awk '{print $2}'
