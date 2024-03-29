@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-# Pings an IP address received as an argument 5 times.
-
-if [ $# -eq 0 ]
-then
-  echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-else
-  ping -c 5 "$1"
-fi
+#!/bin/bash
+# takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+curl -sX POST $1 -d "email=soumyaaitmellouk222@gmail.com&subject=I will always be here for PLD" -L
